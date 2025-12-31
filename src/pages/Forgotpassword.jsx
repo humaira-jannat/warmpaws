@@ -8,7 +8,7 @@ const ForgotPassword = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // ✅ Prefill email if coming from login
+  //  Prefill email if coming from login
   const [email, setEmail] = useState(location.state?.email || "");
 
   const handleReset = async (e) => {
@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     try {
       await sendPasswordResetEmail(auth, email);
       toast.success("Password reset email sent!");
-      // ✅ Redirect to Gmail
+      // Redirect to Gmail
       setTimeout(() => {
         window.location.href = "https://mail.google.com";
       }, 1500);

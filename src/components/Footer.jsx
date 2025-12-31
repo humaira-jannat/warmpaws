@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3 mb-3">
             <img
-              src="/images/logo.png" // WarmPaws logo
+              src="https://i.ibb.co.com/ycz7shys/paw-dog-animal-illustration-logo-free-vector.jpg" // WarmPaws logo
               alt="WarmPaws Logo"
               className="w-12 h-12 rounded-lg shadow-lg"
             />

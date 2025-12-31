@@ -9,8 +9,8 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      await auth.signOut(); // sign out from Firebase
-      setUser(null);        // update context
+      await auth.signOut(); 
+      setUser(null);        
     } catch (error) {
       console.log(error);
     }
